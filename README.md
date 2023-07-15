@@ -1,1 +1,1 @@
-#Barter cum currency marketplace for used products
+# marketplace for used products
