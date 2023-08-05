@@ -5,18 +5,21 @@
 {{ product.name }}
 {%endblock%}
 {% block content %}
-<div class="card mb-3 mt-4" style="max-width: 540px;">
-    <div class="row g-0">
-      <div class="col-md-4">
-        <img src="{% if product.image %}{{ product.image.url }}{%else%} {%static 'img/no_image.png'%}{%endif%}" class="img-fluid rounded-start" alt="...">
-      </div>
-      <div class="col-md-8">
+<div class="card-section fw-bold">
+  <div class="row row-cols-1 row-cols-md-5 g-4 ">
+    <div class="col">
+      <div class="card h-100 border-0">
+        <img src="{% if product.image %}{{ product.image.url }}{%else%} {%static 'img/no_image.png'%}{%endif%}" class="card-img-top" alt="...">
         <div class="card-body">
-            <h5 class="card-title">{{product.name}}</h5>
-            <p class="card-text"><small class="text-muted">£ {{product.price}}</small></p>
+          <p class="card-text">{{product.name}}</p>
         </div>
+        <div class="card-footer">
+          <small class="text-muted text-decoration-line-through">£{{product.price}}</small><small class="ms-3 text-dark">£{{product.price}}</small>
+        </div>
+        <p class="card-text">{{ product.description|linebreaks }}</p>
+      </div>
     </div>
+  </div>
 </div>
-<p class="card-text">{{ product.description|linebreaks }}</p>
 
 {% endblock %}

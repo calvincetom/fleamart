@@ -1,0 +1,87 @@
+  #carouselCaptions {
+    height: 440pt;
+  }
+  .carousel-inner{
+    height: 440pt;
+    position: relative;
+  }
+  
+  .carousel-inner .carousel-item {
+    position: relative;
+    height: 440pt;
+  }
+  
+  .carousel-inner .carousel-item img {
+    object-fit:contain;  
+    position: absolute;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    height: 440pt;
+  }
+
+  a {
+    text-decoration: none;
+  }
+
+  .carousel-caption {
+    position: relative;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 50%;
+  }
+  
+  .carousel-caption h5{
+    text-align: left;
+    font-size: 50px;
+  }
+  .carousel-caption p {
+    text-align: left;
+  }
+
+  
+  .card-img-top {
+    height: 250px;
+    object-fit: cover;
+  }
+
+  .minimal-hero-2 {
+    
+    background-color: rgb(235, 240, 242);
+    /* height: 440pt; */
+    position: relative;
+    object-fit: cover;
+  }
+
+  .timer {
+    justify-content: center;
+    height: 100pt;
+  }
+
+  .card-cover {
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+  }
+  
+  .rounded-4 { border-radius: .5rem; }
+  .rounded-5 { border-radius: 1rem; }
+
+  .text-shadow-1 { text-shadow: 0 .125rem .25rem rgb(250, 252, 252); }
+  .text-shadow-2 { text-shadow: 0 .25rem .5rem rgba(255, 255, 255, 0.975); }
+  .text-shadow-3 { text-shadow: 0 .5rem 1.5rem rgba(247, 246, 246, 0.995); }
+
+  .link { text-decoration: none;}
+  .list-animated { text-decoration: none;}
+
+  .no-text-decoration {
+    text-decoration: none;
+    color: crimson;
+  }
+
+
+  small {
+    color: rgb(33, 5, 250);
+  }
